@@ -89,8 +89,8 @@ int day8p1() {
 
   final distances = _calculateDistances(boxes);
   final List<Set<int>> connections = [];
-  //Because the input is 1000 lines long
-  for (int i = 0; i < boxes.length; i++) {
+  //Because we need the 1000 shortest connections
+  for (int i = 0; i < 1000; i++) {
     final Junction(:b1, :b2) = distances[i];
     _unionise(connections, b1, b2);
   }
