@@ -39,7 +39,7 @@ class Junction {
   Junction(this.b1, this.b2);
 }
 
-// Merge the connections groups if needed.
+//Update the connections gruops and merge them if needed.
 void _unionise(List<Set<int>> connections, int b1, int b2) {
   final c1 = connections.indexWhere((conn) => conn.contains(b1));
   final c2 = connections.indexWhere((conn) => conn.contains(b2));
